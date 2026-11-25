@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Bag | Myntra</title>
+    <link rel="stylesheet" href="../../../style.css">
+    <script src="../../../script.js" defer></script>
+</head>
+<body>
+
+<header class="cart-header">
+    <a href="../../../index.html" class="cart-logo">MYNTRA</a>
+    <h2>SHOPPING BAG</h2>
+    <a href="../../../index.html">CONTINUE SHOPPING</a>
+</header>
+
+<main class="cart-page">
+
+    <section class="cart-left">
+        <h2>My Shopping Bag</h2>
+        <div id="cartItems"></div>
+    </section>
+
+    <aside class="cart-right">
+        <h3>PRICE DETAILS</h3>
+
+        <div class="price-row">
+            <span>Total MRP</span>
+            <span id="totalMRP">₹0</span>
+        </div>
+
+        <div class="price-row">
+            <span>Discount on MRP</span>
+            <span id="discount">₹0</span>
+        </div>
+
+        <div class="price-row">
+            <span>Convenience Fee</span>
+            <span>FREE</span>
+        </div>
+
+        <div class="price-row total-row">
+            <strong>Total Amount</strong>
+            <strong id="totalAmount">₹0</strong>
+        </div>
+
+        <button class="place-order-btn" onclick="placeOrder()">
+            PLACE ORDER
+        </button>
+    </aside>
+
+</main>
+
+</body>
+</html>

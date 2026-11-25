@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra - Fashion Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">MYNTRA</a>
+
+    <nav>
+        <button onclick="filterCategory('Men')">MEN</button>
+        <button onclick="filterCategory('Women')">WOMEN</button>
+        <button onclick="filterCategory('All')">ALL</button>
+    </nav>
+
+    <div class="search-box">
+        <input type="text" id="searchInput"
+               placeholder="Search products and brands">
+        <button onclick="searchProducts()">⌕</button>
+    </div>
+
+    <a href="wishlist.html" class="wishlist-link">♡ Wishlist</a>
+    <a href="bag.html" class="wishlist-link">🛍 Bag</a>
+</header>
+
+<section class="banner">
+    <h1>FASHION THAT DEFINES YOU</h1>
+    <p>Discover the latest trends</p>
+</section>
+
+<main class="container">
+    <div class="section-heading">
+        <h2>Trending Products</h2>
+
+        <select id="sortSelect" onchange="sortProducts()">
+            <option value="default">Recommended</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+            <option value="az">Name: A to Z</option>
+            <option value="za">Name: Z to A</option>
+        </select>
+    </div>
+
+    <p id="resultCount"></p>
+    <div id="productContainer" class="product-grid"></div>
+</main>
+
+<footer>
+    <p>© 2026 Myntra Clone | Made with ♥</p>
+</footer>
+
+</body>
+</html>
